@@ -1,0 +1,7 @@
+baseURL = "http://mackenzieclark.codes/"
+languageCode = "en-us"
+title = "MCC"
+
+[params]
+MetaDescription = "Mackenzie Clark Codes"
+Author = "Mackenzie Clark"

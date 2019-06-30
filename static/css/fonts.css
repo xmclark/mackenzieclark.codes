@@ -1,0 +1,28 @@
+@font-face {
+    font-family: AlegreyaSansRegular;
+    src: url(/fonts/AlegreyaSans-Regular.woff);
+}
+
+@font-face {
+    font-family: AlegreyaSansRegularFB1;
+    src: url(fonts/AlegreyaSans-Regular.woff);
+}
+
+@font-face {
+    font-family: AlegreyaSansRegularFB2;
+    src: url(../fonts/AlegreyaSans-Regular.woff);
+}
+
+@font-face {
+    font-family: AlegreyaSansRegularFB3;
+    src: url(../../fonts/AlegreyaSans-Regular.woff);
+}
+
+body {
+    font-family: AlegreyaSansRegular, AlegreyaSansRegularFB1, AlegreyaSansRegularFB2, AlegreyaSansRegularFB3, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Symbola';
+}
+
+code {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 85%;
+}
