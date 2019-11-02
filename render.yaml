@@ -4,3 +4,4 @@ services:
   env: static
   buildCommand: hugo -D
   staticPublishPath: ./public
+  repo: ./www.mackenzieclark.codes/
