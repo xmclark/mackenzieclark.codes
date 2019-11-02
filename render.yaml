@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: my site
+  env: static
+  buildCommand: hugo -D
+  staticPublishPath: ./public
