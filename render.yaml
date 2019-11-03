@@ -2,5 +2,6 @@ services:
   - type: web
     name: my site
     env: static
+    branch: master
     buildCommand: cd ./www.mackenzieclark.codes && hugo -D
     staticPublishPath: ./www.mackenzieclark.codes/public
