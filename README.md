@@ -1,7 +1,5 @@
-# mackenzieclark.codes
+# mackenzieclark.codes infra
 
-My personal website.
+My personal website and other apps. This infra deploys on [Render][render].
 
-## Attribution
-
-Heavily inspired by another [Hugo site I found](https://nora.codes). This project re-distributes a few of the files from the Loma theme, re-licensed with MIT.
+[render]: https://render.com/
