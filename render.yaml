@@ -3,11 +3,14 @@ services:
     name: my site
     env: static
     branch: master
-    buildCommand: cd ./www.mackenzieclark.codes && hugo -D
+    buildCommand: cd ./www.mackenzieclark.codes && hugo --gc --minify
     staticPublishPath: ./www.mackenzieclark.codes/public
   - type: web
     name: pomo
+    env: static
     repo: https://github.com/xmclark/pomoday-v2.git
     branch: master
     buildCommand: npm install && npm run dist
     staticPublishPath: dist
+    domains:
+      - pomo.mackenzieclark.codes
