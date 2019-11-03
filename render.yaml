@@ -5,3 +5,9 @@ services:
     branch: master
     buildCommand: cd ./www.mackenzieclark.codes && hugo -D
     staticPublishPath: ./www.mackenzieclark.codes/public
+  - type: web
+    name: pomo
+    repo: https://github.com/xmclark/pomoday-v2.git
+    branch: master
+    buildCommand: npm install && npm run dist
+    staticPublishPath: dist
