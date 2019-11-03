@@ -9,7 +9,6 @@ I'm a backend software engineer at [The Home Depot QuoteCenter][HDQC].
 
 I like building solutions with Rust, .NET, and TypeScript on Kubernetes with database technologies like SQL Server and Cassandra with Google Cloud Platform.
 
-
 ## Experience 🛰️
 
 **Senior Software Engineer** at The Home Depot Quote Center (again, 2019 - Present) doing more backend development, infrastructure planning, and platform engineering.
@@ -23,6 +22,10 @@ I like building solutions with Rust, .NET, and TypeScript on Kubernetes with dat
 ## Projects 🚧
 
 [**Zeebest, a Zeebe client**][zeebest] (Rust)
+
+# Posts 🛴
+
+{{< recent >}}
 
 ## Find Me 📧
  
