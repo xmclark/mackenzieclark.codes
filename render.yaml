@@ -1,7 +1,6 @@
 services:
-- type: web
-  name: my site
-  env: static
-  buildCommand: cd ./www.mackenzieclark.codes && hugo -D
-  staticPublishPath: ./public
-  repo: ./www.mackenzieclark.codes/
+  - type: web
+    name: my site
+    env: static
+    buildCommand: cd ./www.mackenzieclark.codes && hugo -D
+    staticPublishPath: ./www.mackenzieclark.codes/public
