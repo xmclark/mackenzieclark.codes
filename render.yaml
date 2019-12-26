@@ -1,3 +1,7 @@
+databases:
+  - name: gitea
+    plan: starter
+
 services:
   - type: web
     name: my site
@@ -14,3 +18,43 @@ services:
     staticPublishPath: dist
     domains:
       - pomo.mackenzieclark.codes
+  - type: web
+    name: gitea
+    env: docker
+    repo: https://github.com/go-gitea/gitea.git
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./
+    domains:
+      - gitea.mackenzieclark.codes
+    disk:
+      name: data
+      mountPath: /data
+    envVars:
+      - key: DB_USER
+        fromDatabase:
+          name: gitea
+          property: user
+      - key: DB_PASSWD
+        fromDatabase:
+          name: gitea
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: gitea
+          property: database
+      - key: DB_HOST
+        fromDatabase:
+          name: gitea
+          property: host
+      - key: DB_TYPE
+        value: postgres
+      - key: USER_UID
+        value: 1000
+      - key: USER_GID
+        value: 1000
+      - key: ROOT_URL
+        value: https://gitea.mackenzieclark.codes
+      - key: RUN_MODE
+        value: prod
+      - key: SECRET_KEY
+        sync: false
